@@ -1,6 +1,6 @@
 <template>
     <div class="inventoryCont"> 
-        <div>
+        <div class="componentsCont">
             <ghost-cart @update-theme="toggleTheme"/>
             <Table/>
         </div>
@@ -44,5 +44,12 @@ export default {
         height: 660px;
         width: 849px;
         border: 1px solid black;
+    }
+
+    .componentsCont{
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
     }
 </style>
